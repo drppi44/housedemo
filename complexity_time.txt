@@ -1,0 +1,8 @@
+Average time per Complexity point (CP): 2:55
+Minimal time per CP: 1:02
+maximum time per cp: 6:35
+
+1. Base project structure and analysis: 1cp
+2. Project local deployment: 1cp
+3. add content: 1cp
+4. filtering by content type: 1CP
