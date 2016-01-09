@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+{% block content %}
+    <form action="" method="get">
+        {{ filter.form.as_ul }}
+        {% for field in filter.form %}
+            {{ field.field. }}
+        {% endfor %}
+
+        <input type="submit" />
+    </form>
+    {% for obj in filter %}
+        <ul>
+        <li>{{ obj.price }}</li>
+        <li>{{ obj.area }}</li>
+        <li>{{ obj.get_wc_type_display }}</li>
+        </ul>
+    {% endfor %}
+{% endblock %}
+
+</body>
+</html>

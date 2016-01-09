@@ -1,9 +1,8 @@
 from django.conf.urls import url
-import views
-
+from views import flat_add, house_add, filter_flat
 
 urlpatterns = [
-    url(r'^$', views.flat, name='flat'),
-    url('^flat-add/$', views.flat_add, name='flat_add'),
-    url('^house-add/$', views.house_add, name='house_add')
+    url('^flat-add/$', flat_add, name='flat_add'),
+    url('^house-add/$', house_add, name='house_add'),
+    url('^filter/$', filter_flat, name='filter_flatt')
 ]

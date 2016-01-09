@@ -1,3 +1,7 @@
 from django.contrib import admin
+from main.models import Flat
+from main.models import House
 
-# Register your models here.
+
+admin.site.register(Flat)
+admin.site.register(House)

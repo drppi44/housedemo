@@ -12,17 +12,17 @@
     <!-- Loading Source Sans Pro font that is used in this theme-->
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7cSource+Sans+Pro:200,400,600,700,900,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <!-- Boostrap and other lib styles-->
-    <link rel="stylesheet" href="assets/css/vendor.min.css?v=201512200731">
+    <link rel="stylesheet" href="static/css/vendor.min.css?v=201512200731">
     <!-- Font-awesome lib-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css?v=201512200731">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css?v=201512200731">
     <!-- Theme styles, please replace "default" with other color scheme from the list available in template/css-->
-    <link rel="stylesheet" href="assets/css/theme-default.min.css?v=201512200731">
+    <link rel="stylesheet" href="static/css/theme-default.min.css?v=201512200731">
     <!-- Your styles should go in this file-->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="static/css/custom.css">
     <!-- Fixes for IE-->
     <!--[if lt IE 11]>
-    <link rel="stylesheet" href="assets/css/ie-fix.css"><![endif]-->
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/ie-fix.css"><![endif]-->
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
@@ -500,7 +500,7 @@ becomes
     <!-- END NAVBAR-->
     <div class="site-wrap js-site-wrap">
         <div class="banner js-banner banner--wide">
-            <div style="background-image: url(&quot;assets/images/banner-1.jpg&quot;);" class="banner__item">
+            <div style="background-image: url('static/images/banner-1.jpg');" class="banner__item">
                 <div class="map map--index map--banner">
                     <div class="map__buttons">
                         <button type="button" class="map__change-map js-map-btn">Property Map</button>
@@ -533,190 +533,7 @@ becomes
                             <div class="search js-search-form search--banner-sidebar">
                                 <div class="container">
                                     <!-- end of block .search__header-->
-                                    <form id="search-form" action="properties_listing.html" class="search__form">
-                                        <div class="search__row">
-                                            <div class="search__form-group form-group">
-                                                <label for="in-contract-type" class="search__form-label control-label">Contract type</label>
-                                                <select id="in-contract-type" data-placeholder="Contract type" class="search__form-control search__form-control--select form-control js-in-select">
-                                                    <option label=" "></option>
-                                                    <option>Sale</option>
-                                                    <option>Rent</option>
-                                                </select>
-                                            </div>
-                                            <div class="search__form-group form-group"><span class="search__form-label control-label">Location</span>
-                                                <div class="dropdown dropdown--select">
-                                                    <button type="button" data-toggle="dropdown" data-placeholder="City" class="dropdown-toggle js-select-checkboxes-btn">City</button>
-                                                    <div class="dropdown-menu js-dropdown-menu js-select-checkboxes">
-                                                        <div class="region-select">
-                                                            <ul id="region" class="bonsai region-select__list">
-                                                                <li>
-                                                                    <input id="scom-property-map-2_treeterm_37" type="checkbox" name="location[]" value="37" class="in-checkbox">
-                                                                    <label for="scom-property-map-2_treeterm_37" data-toggle="tooltip" data-placement="top" title="Fresno" class="in-label">Fresno</label>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_38" type="checkbox" name="location[]" value="38" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_38" data-toggle="tooltip" data-placement="top" title="Clovis" class="in-label">Clovis</label>
-                                                                        </li>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_39" type="checkbox" name="location[]" value="39" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_39" data-toggle="tooltip" data-placement="top" title="Fresno" class="in-label">Fresno</label>
-                                                                        </li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li>
-                                                                    <input id="scom-property-map-2_treeterm_40" type="checkbox" name="location[]" value="40" class="in-checkbox">
-                                                                    <label for="scom-property-map-2_treeterm_40" data-toggle="tooltip" data-placement="top" title="Los Angeles" class="in-label">Los Angeles</label>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_41" type="checkbox" name="location[]" value="41" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_41" data-toggle="tooltip" data-placement="top" title="Glendale" class="in-label">Glendale</label>
-                                                                        </li>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_42" type="checkbox" name="location[]" value="42" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_42" data-toggle="tooltip" data-placement="top" title="Long Beach" class="in-label">Long Beach</label>
-                                                                        </li>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_44" type="checkbox" name="location[]" value="44" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_44" data-toggle="tooltip" data-placement="top" title="Los Angeles" class="in-label">Los Angeles</label>
-                                                                            <ul>
-                                                                                <li>
-                                                                                    <input id="scom-property-map-2_treeterm_45" type="checkbox" name="location[]" value="45" class="in-checkbox">
-                                                                                    <label for="scom-property-map-2_treeterm_45" data-toggle="tooltip" data-placement="top" title="Bel Air" class="in-label">Bel Air</label>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <input id="scom-property-map-2_treeterm_46" type="checkbox" name="location[]" value="46" class="in-checkbox">
-                                                                                    <label for="scom-property-map-2_treeterm_46" data-toggle="tooltip" data-placement="top" title="Brentwood" class="in-label">Brentwood</label>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <input id="scom-property-map-2_treeterm_47" type="checkbox" name="location[]" value="47" class="in-checkbox">
-                                                                                    <label for="scom-property-map-2_treeterm_47" data-toggle="tooltip" data-placement="top" title="Holywood Hills" class="in-label">Holywood Hills</label>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <input id="scom-property-map-2_treeterm_48" type="checkbox" name="location[]" value="48" class="in-checkbox">
-                                                                                    <label for="scom-property-map-2_treeterm_48" data-toggle="tooltip" data-placement="top" title="Mar Vista" class="in-label">Mar Vista</label>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <input id="scom-property-map-2_treeterm_49" type="checkbox" name="location[]" value="49" class="in-checkbox">
-                                                                                    <label for="scom-property-map-2_treeterm_49" data-toggle="tooltip" data-placement="top" title="Silver Lake" class="in-label">Silver Lake</label>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_43" type="checkbox" name="location[]" value="43" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_43" data-toggle="tooltip" data-placement="top" title="Santa Ana" class="in-label">Santa Ana</label>
-                                                                        </li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li>
-                                                                    <input id="scom-property-map-2_treeterm_50" type="checkbox" name="location[]" value="50" class="in-checkbox">
-                                                                    <label for="scom-property-map-2_treeterm_50" data-toggle="tooltip" data-placement="top" title="Santa Clara" class="in-label">Santa Clara</label>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_51" type="checkbox" name="location[]" value="51" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_51" data-toggle="tooltip" data-placement="top" title="Cupertino" class="in-label">Cupertino</label>
-                                                                        </li>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_52" type="checkbox" name="location[]" value="52" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_52" data-toggle="tooltip" data-placement="top" title="Mountain View" class="in-label">Mountain View</label>
-                                                                        </li>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_53" type="checkbox" name="location[]" value="53" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_53" data-toggle="tooltip" data-placement="top" title="Palo Alto" class="in-label">Palo Alto</label>
-                                                                        </li>
-                                                                        <li>
-                                                                            <input id="scom-property-map-2_treeterm_54" type="checkbox" name="location[]" value="54" class="in-checkbox">
-                                                                            <label for="scom-property-map-2_treeterm_54" data-toggle="tooltip" data-placement="top" title="San Jose" class="in-label">San Jose</label>
-                                                                        </li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="region-select__buttons">
-                                                                <button type="button" class="region-select__btn region-select__btn--reset js-select-checkboxes-reset">Clear</button>
-                                                                <button type="button" class="region-select__btn js-select-checkboxes-accept">Accept</button>
-                                                            </div>
-                                                        </div>
-                                                        <!-- end of block .region-select-->
-                                                    </div>
-                                                    <!-- end of block .dropdown-menu-->
-                                                </div>
-                                            </div>
-                                            <div class="search__form-group form-group">
-                                                <label for="in-descr" class="search__form-label control-label">Description</label>
-                                                <input type="text" placeholder="Description" id="in-descr" class="search__form-control search__form-control--text form-control">
-                                            </div>
-                                            <div class="search__form-group form-group"><span class="search__form-label control-label">Property type</span>
-                                                <div class="dropdown dropdown--select">
-                                                    <button type="button" data-toggle="dropdown" data-placeholder="Property type" class="dropdown-toggle js-select-checkboxes-btn">Property type</button>
-                                                    <div class="dropdown-menu js-dropdown-menu js-select-checkboxes">
-                                                        <ul>
-                                                            <li>
-                                                                <input id="checkbox_type_1" type="checkbox" name="checkbox_type_1" class="in-checkbox">
-                                                                <label for="checkbox_type_1" data-toggle="tooltip" data-placement="left" title="Tooltip on top" class="in-label">Privat apartment</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="checkbox_type_2" type="checkbox" name="checkbox_type_2" class="in-checkbox">
-                                                                <label for="checkbox_type_2" data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="in-label">Apartment</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="checkbox_type_3" type="checkbox" name="checkbox_type_3" class="in-checkbox">
-                                                                <label for="checkbox_type_3" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top" class="in-label">Cottage</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="checkbox_type_4" type="checkbox" name="checkbox_type_4" class="in-checkbox">
-                                                                <label for="checkbox_type_4" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top" class="in-label">Flat</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="checkbox_type_5" type="checkbox" name="checkbox_type_5" class="in-checkbox">
-                                                                <label for="checkbox_type_5" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top" class="in-label">House</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="checkbox_type_6" type="checkbox" name="checkbox_type_6" class="in-checkbox">
-                                                                <label for="checkbox_type_6" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top" class="in-label">Condominium</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="checkbox_type_7" type="checkbox" name="checkbox_type_7" class="in-checkbox">
-                                                                <label for="checkbox_type_7" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top" class="in-label">Cottage</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="checkbox_type_8" type="checkbox" name="checkbox_type_8" class="in-checkbox">
-                                                                <label for="checkbox_type_8" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top" class="in-label">Flat</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="checkbox_type_9" type="checkbox" name="checkbox_type_9" class="in-checkbox">
-                                                                <label for="checkbox_type_9" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top" class="in-label">Cottage</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="checkbox_type_10" type="checkbox" name="checkbox_type_10" class="in-checkbox">
-                                                                <label for="checkbox_type_10" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top" class="in-label">Condominium</label>
-                                                            </li>
-                                                        </ul>
-                                                        <!-- end of block .dropdown-menu-->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="search__form-group form-group">
-                                                <label for="in-datetime" class="search__form-label control-label">Date Range</label>
-                                                <input type="text" id="in-datetime" data-start-date="12/03/2015" data-end-date="12/22/2015" data-time-picker="true" data-single-picker="false" class="search__form-control search__form-control--text js-datetimerange form-control">
-                                            </div>
-                                            <div class="search__form-group form-group">
-                                                <label for="range_price" class="search__form-label control-label">Price range</label>
-                                                <div class="search__ranges">
-                                                    <input id="range_price" class="js-search-range search__ranges-in">
-                                                </div>
-                                            </div>
-                                            <div class="search__form-group form-group">
-                                                <label for="range_area" class="search__form-label control-label">Area range</label>
-                                                <div class="search__ranges">
-                                                    <input id="range_area" class="js-search-range search__ranges-in">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="search__row search__row--buttons">
-                                            <div class="search__buttons">
-                                                <button type="submit" class="search__btn search__btn--action">Search</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    {% include 'search_form.html' %}
                                     <!-- end of block .search__form#search-form-->
                                 </div>
                             </div>
@@ -732,192 +549,22 @@ becomes
 
             <div class="container">
                 <header class="properties__header">
-                    <h3 class="properties__title">Real estates</h3>
-                    <h4 class="properties__headline">Our agents are licensed professionals that specialise in searching, evaluating and negotiating the purchase of property on behalf of the buyer. They will sell you real estate. Insights, tips & how-to guides on selling property and preparing your home or investment property for sale and working to maximise your sale price.</h4>
+{#                    <h3 class="properties__title">Real estates</h3>#}
+{#                    <h4 class="properties__headline">Our agents are licensed professionals that specialise in searching, evaluating and negotiating the purchase of property on behalf of the buyer. They will sell you real estate. Insights, tips & how-to guides on selling property and preparing your home or investment property for sale and working to maximise your sale price.</h4>#}
                 </header>
                 <!-- end of block .properties__header-->
                 <div role="tabpanel">
-                    <ul role="tablist" class="properties__filter">
+                    {% comment %}<ul role="tablist" class="properties__filter">
                         <li class="active"><a href="#tab-popular" aria-controls="tab-popular" role="tab" data-toggle="tab" class="properties__btn js-pgroup-tab">Popular</a></li>
                         <li><a href="#tab-recent" aria-controls="tab-recent" role="tab" data-toggle="tab" class="properties__btn js-pgroup-tab">Recent</a></li>
                         <li><a href="#tab-featured" aria-controls="tab-featured" role="tab" data-toggle="tab" class="properties__btn js-pgroup-tab">Featured</a></li>
-                    </ul>
+                    </ul>{% endcomment %}
                     <!-- end of block .properties__filter-->
-                    <div class="tab-content properties__tab-content">
-                        <div id="tab-popular" class="properties__list tab-pane in active">
-                            <div data-sr="ease-in-out 130px" class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/02.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Self Storage</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">371 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">2</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">1</span></span></span></figure></a><span class="properties__ribon">For rent</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">649 West Adams Boulevard</span><span class="properties__address-city">Los Angeles, CA 90007, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$4,555<span class="properties__price-period">per month</span></span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div data-sr="ease-in-out 130px" class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/03.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Mixed-Use</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">190 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">2</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">1</span></span></span></figure></a><span class="properties__ribon">For sale</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">958 Dewey Avenue</span><span class="properties__address-city">Los Angeles, CA 90006, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$86,723</span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div data-sr="ease-in-out 130px" class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/04.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Multifamily</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">526 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">1</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">1</span></span></span></figure></a><span class="properties__ribon">For sale</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">1026 Ohio Avenue</span><span class="properties__address-city">Long Beach, CA 90804, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$511,789</span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div data-sr="ease-in-out 130px" class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/05.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Multifamily</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">131 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">1</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">2</span></span></span></figure></a><span class="properties__ribon">For sale</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">514 East Myrtle Street</span><span class="properties__address-city">Santa Ana, CA 92701, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$79,560</span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div data-sr="ease-in-out 130px" class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/06.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Retail</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">377 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">2</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">2</span></span></span></figure></a><span class="properties__ribon">For rent</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">1230 Martin Luther King</span><span class="properties__address-city">Los Angeles, CA 90037, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$2,255<span class="properties__price-period">per month</span></span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div data-sr="ease-in-out 130px" class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/07.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Public Infrastructure</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">460 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">1</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">1</span></span></span></figure></a><span class="properties__ribon">For sale</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">401 South Sycamore Street</span><span class="properties__address-city">Santa Ana, CA 92701, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$6,218,780</span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                        </div>
-                        <div id="tab-recent" class="properties__list tab-pane">
-                            <div class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/06.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Retail</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">377 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">2</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">2</span></span></span></figure></a><span class="properties__ribon">For rent</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">1230 Martin Luther King</span><span class="properties__address-city">Los Angeles, CA 90037, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$2,255<span class="properties__price-period">per month</span></span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/07.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Public Infrastructure</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">460 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">1</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">1</span></span></span></figure></a><span class="properties__ribon">For sale</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">401 South Sycamore Street</span><span class="properties__address-city">Santa Ana, CA 92701, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$6,218,780</span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/08.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Office</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">371 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">2</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">1</span></span></span></figure></a><span class="properties__ribon">For rent</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">649 West Adams Boulevard</span><span class="properties__address-city">Los Angeles, CA 90007, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$3,100<span class="properties__price-period">per month</span></span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/09.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Seniors Housing</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">190 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">2</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">1</span></span></span></figure></a>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">958 Dewey Avenue</span><span class="properties__address-city">Los Angeles, CA 90006, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$23,351</span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/10.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Student Housing</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">534 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">1</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">1</span></span></span></figure></a><span class="properties__ribon">For rent</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">1026 Ohio Avenue</span><span class="properties__address-city">Long Beach, CA 90804, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$2750<span class="properties__price-period">per month</span></span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/11.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Industrial</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">131 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">1</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">2</span></span></span></figure></a><span class="properties__ribon">For sale</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">514 East Myrtle Street</span><span class="properties__address-city">Santa Ana, CA 92701, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$879,560</span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                        </div>
-                        <div id="tab-featured" class="properties__list tab-pane">
-                            <div class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/05.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Multifamily</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">131 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">1</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">2</span></span></span></figure></a><span class="properties__ribon">For sale</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">514 East Myrtle Street</span><span class="properties__address-city">Santa Ana, CA 92701, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$79,560</span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/06.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Retail</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">377 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">2</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">2</span></span></span></figure></a><span class="properties__ribon">For rent</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">1230 Martin Luther King</span><span class="properties__address-city">Los Angeles, CA 90037, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$2,255<span class="properties__price-period">per month</span></span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                            <div class="properties__item">
-                                <div class="properties__thumb"><a href="property_details.html" class="item-photo"><img src="assets/media-demo/properties/554x360/07.jpg" alt="">
-                                    <figure class="item-photo__hover item-photo__hover--params"><span class="properties__param-type">Public Infrastructure</span><span class="properties__param"><span class="properties__param-column"><span class="properties__param-label">Area:</span><span class="properties__param-value">460 m2</span></span><span class="properties__param-column"><span class="properties__param-label">Beds:</span><span class="properties__param-value">1</span></span><span class="properties__param-column"><span class="properties__param-label">Baths:</span><span class="properties__param-value">1</span></span></span></figure></a><span class="properties__ribon">For sale</span>
-                                </div>
-                                <!-- end of block .properties__thumb-->
-                                <div class="properties__info"><a href="property_details.html" class="properties__address"><span class="properties__address-street">401 South Sycamore Street</span><span class="properties__address-city">Santa Ana, CA 92701, USA</span></a><a href="property_details.html" class="properties__more">View details</a>
-                                    <!-- end of block .properties__param--><span class="properties__price">$6,218,780</span>
-                                </div>
-                                <!-- end of block .properties__info-->
-                            </div>
-                            <!-- end of block .properties__item-->
-                        </div>
-                    </div>
+                    {% include 'products.html' %}
+
                     <!-- end of block .properties__tab-content-->
-                </div><a href="properties_listing.html" class="properties__btn-more">More properties</a>
+                </div>
+{#                <a href="properties_listing.html" class="properties__btn-more">More properties</a>#}
             </div>
         </section>
         <!-- END PROPERTIES INDEX-->
@@ -998,7 +645,7 @@ becomes
             <!-- end of block .worker__header-->
             <div class="worker__list">
               <div data-sr="enter bottom move 80px, scale(0), over 0s" data-animate-end="animate-end" class="worker__item vcard">
-                <div class="worker__photo"><a href="agent_listing.html" class="item-photo item-photo--static"><img src="assets/media-demo/workers/worker-1.jpg" alt="Christopher Pakulla" class="photo"></a>
+                <div class="worker__photo"><a href="agent_listing.html" class="item-photo item-photo--static"><img src="static/media-demo/workers/worker-1.jpg" alt="Christopher Pakulla" class="photo"></a>
                   <div class="worker__details"><span class="worker__post">Realtor, West USA Realty</span>
                     <div class="worker__links"><a class="worker__link">
                         <svg class="worker__link-icon">
@@ -1014,7 +661,7 @@ becomes
               </div>
               <!-- end of block .worker__item-->
               <div data-sr="enter bottom move 80px, scale(0), over 0.3s" data-animate-end="animate-end" class="worker__item vcard">
-                <div class="worker__photo"><a href="agent_listing.html" class="item-photo item-photo--static"><img src="assets/media-demo/workers/worker-2.jpg" alt="Lisa Wemert" class="photo"></a>
+                <div class="worker__photo"><a href="agent_listing.html" class="item-photo item-photo--static"><img src="static/media-demo/workers/worker-2.jpg" alt="Lisa Wemert" class="photo"></a>
                   <div class="worker__details"><span class="worker__post">Managing Broker/Partner, e-PRO</span>
                     <div class="worker__links"><a class="worker__link">
                         <svg class="worker__link-icon">
@@ -1030,7 +677,7 @@ becomes
               </div>
               <!-- end of block .worker__item-->
               <div data-sr="enter bottom move 80px, scale(0), over 0.6s" data-animate-end="animate-end" class="worker__item vcard">
-                <div class="worker__photo"><a href="agent_listing.html" class="item-photo item-photo--static"><img src="assets/media-demo/workers/worker-3.jpg" alt="Mariusz Ciesla" class="photo"></a>
+                <div class="worker__photo"><a href="agent_listing.html" class="item-photo item-photo--static"><img src="static/media-demo/workers/worker-3.jpg" alt="Mariusz Ciesla" class="photo"></a>
                   <div class="worker__details"><span class="worker__post">Real Estate Professional</span>
                     <div class="worker__links"><a class="worker__link">
                         <svg class="worker__link-icon">
@@ -1046,7 +693,7 @@ becomes
               </div>
               <!-- end of block .worker__item-->
               <div data-sr="enter bottom move 80px, scale(0), over 0.8999999999999999s" data-animate-end="animate-end" class="worker__item vcard">
-                <div class="worker__photo"><a href="agent_listing.html" class="item-photo item-photo--static"><img src="assets/media-demo/workers/worker-4.jpg" alt="Vladimir Babic" class="photo"></a>
+                <div class="worker__photo"><a href="agent_listing.html" class="item-photo item-photo--static"><img src="static/media-demo/workers/worker-4.jpg" alt="Vladimir Babic" class="photo"></a>
                   <div class="worker__details"><span class="worker__post">Realtor, CDPE</span>
                     <div class="worker__links"><a class="worker__link">
                         <svg class="worker__link-icon">
@@ -1076,7 +723,7 @@ becomes
             </div>
             <!-- end of block .article__header-->
             <div class="article__list">
-              <div data-sr="enter left over 1s and scale up 20%" data-animate-end="" class="article__item"><a href="blog_details.html" class="article__photo"><img src="assets/media-demo/news/news-1.jpg" alt="News title" class="article__photo-img">
+              <div data-sr="enter left over 1s and scale up 20%" data-animate-end="" class="article__item"><a href="blog_details.html" class="article__photo"><img src="static/media-demo/news/news-1.jpg" alt="News title" class="article__photo-img">
                   <time datetime="2009-08-29" class="article__time">OCT<strong>27</strong></time></a>
                 <div class="article__details"><a href="blog_details.html" class="article__item-title">Sustainable architecture &amp; design.</a>
                   <div class="article__intro">
@@ -1085,7 +732,7 @@ becomes
                 </div>
               </div>
               <!-- end of block .article__item-->
-              <div data-sr="enter bottom over 1s and scale up 20%" data-animate-end="" class="article__item"><a href="blog_details.html" class="article__photo"><img src="assets/media-demo/news/news-2.jpg" alt="News title" class="article__photo-img">
+              <div data-sr="enter bottom over 1s and scale up 20%" data-animate-end="" class="article__item"><a href="blog_details.html" class="article__photo"><img src="static/media-demo/news/news-2.jpg" alt="News title" class="article__photo-img">
                   <time datetime="2009-08-29" class="article__time">SEP<strong>02</strong></time></a>
                 <div class="article__details"><a href="blog_details.html" class="article__item-title">You’ve been approved for a rental home.</a>
                   <div class="article__intro">
@@ -1094,7 +741,7 @@ becomes
                 </div>
               </div>
               <!-- end of block .article__item-->
-              <div data-sr="enter right over 1s and scale up 20%" data-animate-end="" class="article__item"><a href="blog_details.html" class="article__photo"><img src="assets/media-demo/news/news-3.jpg" alt="News title" class="article__photo-img">
+              <div data-sr="enter right over 1s and scale up 20%" data-animate-end="" class="article__item"><a href="blog_details.html" class="article__photo"><img src="static/media-demo/news/news-3.jpg" alt="News title" class="article__photo-img">
                   <time datetime="2009-08-29" class="article__time">AUG<strong>11</strong></time></a>
                 <div class="article__details"><a href="blog_details.html" class="article__item-title">The Block Glasshouse winners.</a>
                   <div class="article__intro">
@@ -1159,7 +806,7 @@ becomes
             <div id="review-slider" class="review__list">
               <div class="review__slider js-slick-slider">
                 <div class="review__item">
-                  <div class="review__photo"><img src="assets/media-demo/testimonials/01.jpg" alt="ALT" class="review__photo-img"></div>
+                  <div class="review__photo"><img src="static/media-demo/testimonials/01.jpg" alt="ALT" class="review__photo-img"></div>
                   <div class="review__details"><span class="review__name">Vanessa Kasinsky</span><span class="review__post">Brand Manager</span>
                     <div class="review__stars"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></div>
                   </div>
@@ -1173,7 +820,7 @@ becomes
                   <!-- end of block .review__item-->
                 </div>
                 <div class="review__item">
-                  <div class="review__photo"><img src="assets/media-demo/testimonials/02.jpg" alt="ALT" class="review__photo-img"></div>
+                  <div class="review__photo"><img src="static/media-demo/testimonials/02.jpg" alt="ALT" class="review__photo-img"></div>
                   <div class="review__details"><span class="review__name">Joseph Ryan</span><span class="review__post">Brand Manager</span>
                     <div class="review__stars"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></div>
                   </div>
@@ -1187,7 +834,7 @@ becomes
                   <!-- end of block .review__item-->
                 </div>
                 <div class="review__item">
-                  <div class="review__photo"><img src="assets/media-demo/testimonials/03.jpg" alt="ALT" class="review__photo-img"></div>
+                  <div class="review__photo"><img src="static/media-demo/testimonials/03.jpg" alt="ALT" class="review__photo-img"></div>
                   <div class="review__details"><span class="review__name">Caroline Reynolds</span><span class="review__post">Brand Manager</span>
                     <div class="review__stars"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></div>
                   </div>
@@ -1201,7 +848,7 @@ becomes
                   <!-- end of block .review__item-->
                 </div>
                 <div class="review__item">
-                  <div class="review__photo"><img src="assets/media-demo/testimonials/04.jpg" alt="ALT" class="review__photo-img"></div>
+                  <div class="review__photo"><img src="static/media-demo/testimonials/04.jpg" alt="ALT" class="review__photo-img"></div>
                   <div class="review__details"><span class="review__name">Ana Oliver</span><span class="review__post">Brand Manager</span>
                     <div class="review__stars"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></div>
                   </div>
@@ -1252,13 +899,13 @@ becomes
             <!-- end of block .partners__header-->
             <div id="partners-slider" class="partners__list">
               <div class="partners__slider js-slick-slider">
-                <div class="partners__item"><img src="assets/media-demo/partners/logo-company-1.png" alt=""></div>
-                <div class="partners__item"><img src="assets/media-demo/partners/logo-company-2.png" alt=""></div>
-                <div class="partners__item"><img src="assets/media-demo/partners/logo-company-3.png" alt=""></div>
-                <div class="partners__item"><img src="assets/media-demo/partners/logo-company-4.png" alt=""></div>
-                <div class="partners__item"><img src="assets/media-demo/partners/logo-company-5.png" alt=""></div>
-                <div class="partners__item"><img src="assets/media-demo/partners/logo-company-3.png" alt=""></div>
-                <div class="partners__item"><img src="assets/media-demo/partners/logo-company-2.png" alt=""></div>
+                <div class="partners__item"><img src="static/media-demo/partners/logo-company-1.png" alt=""></div>
+                <div class="partners__item"><img src="static/media-demo/partners/logo-company-2.png" alt=""></div>
+                <div class="partners__item"><img src="static/media-demo/partners/logo-company-3.png" alt=""></div>
+                <div class="partners__item"><img src="static/media-demo/partners/logo-company-4.png" alt=""></div>
+                <div class="partners__item"><img src="static/media-demo/partners/logo-company-5.png" alt=""></div>
+                <div class="partners__item"><img src="static/media-demo/partners/logo-company-3.png" alt=""></div>
+                <div class="partners__item"><img src="static/media-demo/partners/logo-company-2.png" alt=""></div>
               </div>
               <div class="partners__controls">
                 <button class="partners__arrow partners__arrow--prev js-partners-prev"></button>
@@ -1395,6 +1042,36 @@ becomes
     </div>
 
 </div>
+
+<button type="button" class="scrollup js-scrollup"></button>
+<!-- end of block .scrollup-->
+<!-- BEGIN SCRIPTS and INCLUDES-->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=places"></script>
+<!--
+Contains vendor libraries (Bootstrap3, Jquery, Chosen, etc) already compiled into a single file, with
+versions that are verified to work with our theme. Normally, you should not edit that file.
+-->
+<script src="static/js/vendor.min.js?v=201512200731"></script>
+<!--
+This file is used for demonstration purposes and contains example property items, that are mostly used to
+render markers on the map. You can safely delete this file, after you've adapted the demo.js code
+to use your own data.
+-->
+<script src="static/js/demodata.min.js?v=201512200731"></script>
+<!--
+The library code that Realtyspace theme relies on, in order to function properly.
+Normally, you should not edit this file or add your own code there.
+-->
+<script src="static/js/app.min.js?v=201512200731"></script>
+<!--
+the main file, that you should modify. It contains lots of examples of
+plugin usage, with detailed comments about specific sections of the code.
+-->
+<script src="static/js/demo.min.js?v=201512200731"></script>
+<!-- END SCRIPTS and INCLUDES-->
+<script src="{% static 'js/jquerymin.js' %}"></script>
+<script src="{% static 'js/jquery.form.min.js' %}"></script>
+{#<script src="{% static 'js/bootstrap.min.js' %}"></script>#}
 <div class="modal fade" id="flat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -1416,59 +1093,48 @@ becomes
 
 <script>
     var form_flat = '#id_flat';
-    $(document).on('submit', form_flat, function(e){
-        e.preventDefault();
-
-        $.post("{% url 'flat_add' %}", $(form_flat).serialize())
-                .done(function(data){
-                          if (data.success)
-                              $(form_flat).find('.success-message').show();
-                          else
-                              $(form_flat).replaceWith(data['form_html']);
-                      })
-    });
-
     var form_house = '#id_house';
-    $(document).on('submit', form_house, function(e){
-        e.preventDefault();
 
-        $.post("{% url 'house_add' %}", $(form_house).serialize())
-                .done(function(data){
-                          if (data.success)
-                              $(form_house).find('.success-message').show();
-                          else
-                              $(form_house).replaceWith(data['form_html']);
-                      })
+
+$(document).ready(function() {
+    var options = {
+        beforeSubmit:  showRequest,
+        success:       showResponse,
+        error: function(data){console.log(data)},
+
+        // other available options:
+        dataType:  'json'
+    };
+
+    $(document).on('submit', form_flat, function(event){
+        event.preventDefault();
+        $(this).ajaxSubmit(options);
     });
-</script>
-<button type="button" class="scrollup js-scrollup"></button>
-<!-- end of block .scrollup-->
-<!-- BEGIN SCRIPTS and INCLUDES-->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=places"></script>
-<!--
-Contains vendor libraries (Bootstrap3, Jquery, Chosen, etc) already compiled into a single file, with
-versions that are verified to work with our theme. Normally, you should not edit that file.
--->
-<script src="assets/js/vendor.min.js?v=201512200731"></script>
-<!--
-This file is used for demonstration purposes and contains example property items, that are mostly used to
-render markers on the map. You can safely delete this file, after you've adapted the demo.js code
-to use your own data.
--->
-<script src="assets/js/demodata.min.js?v=201512200731"></script>
-<!--
-The library code that Realtyspace theme relies on, in order to function properly.
-Normally, you should not edit this file or add your own code there.
--->
-<script src="assets/js/app.min.js?v=201512200731"></script>
-<!--
-the main file, that you should modify. It contains lots of examples of
-plugin usage, with detailed comments about specific sections of the code.
--->
-<script src="assets/js/demo.min.js?v=201512200731"></script>
-<!-- END SCRIPTS and INCLUDES-->
-<script src="{% static 'js/jquerymin.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
+    $(document).on('submit', form_house, function(event){
+        event.preventDefault();
+        $(this).ajaxSubmit(options);
+    });
 
+    function showRequest(formData, jqForm, options) {
+        this.jqForm = jqForm;
+        return true;
+    }
+
+    function showResponse(responseText, statusText, xhr, $form)  {
+            $(this.jqForm).replaceWith(responseText['form_html']);
+    }
+});
+
+$(document).on('submit', 'form#id_flat_search', function(event){
+    event.preventDefault();
+    var url = $(this).attr('action');
+    $.post($(this).attr('action'), $(this).serialize())
+            .done(function(data){
+                         console.log(data);
+                         $('section.properties [role=tabpanel]').html(data.html);
+                         $('.properties__item').css('visibility', 'visible')
+                      })
+})
+</script>
 </body>
 </html>

@@ -8,6 +8,7 @@ class FlatForm(forms.ModelForm):
     helper = FormHelper()
     helper.form_method = 'POST'
     helper.form_id = 'id_flat'
+    helper.form_action = 'flat/flat-add/'
     helper.add_input(Submit('Save', 'Save', css_class='btn-primary'))
 
     helper.form_class = 'form-horizontal'
@@ -23,6 +24,7 @@ class HouseForm(forms.ModelForm):
     helper = FormHelper()
     helper.form_method = 'POST'
     helper.form_id = 'id_house'
+    helper.form_action = 'flat/house-add/'
     helper.add_input(Submit('Save', 'Save', css_class='btn-primary'))
 
     helper.form_class = 'form-horizontal'
